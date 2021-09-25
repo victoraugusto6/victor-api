@@ -7,11 +7,11 @@ from typer.testing import CliRunner
 
 # This next line ensures tests uses its own database and settings environment
 os.environ["FORCE_ENV_FOR_DYNACONF"] = "testing"  # noqa
-# WARNING: Ensure imports from `project_name` comes after this line
+# WARNING: Ensure imports from `victor_api` comes after this line
 
-from project_name.app import app
-from project_name.cli import cli
-from project_name.config import settings
+from victor_api.app import app
+from victor_api.cli import cli
+from victor_api.config import settings
 
 
 @pytest.fixture(autouse=True)

@@ -1,5 +1,5 @@
 """
-project_name base module.
+victor_api base module.
 """
 from fastapi import FastAPI
 
